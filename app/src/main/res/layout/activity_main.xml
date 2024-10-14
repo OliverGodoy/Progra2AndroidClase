@@ -26,25 +26,38 @@
         android:text="@string/tvSaludo"
         android:textSize="48sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="338dp" />
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="443dp" />
 
     <Button
         android:id="@+id/btnSaludar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnSaludar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="170dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/btnCrearDb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnCrearDb"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="261dp" />
+        app:layout_constraintTop_toBottomOf="@id/btnSaludar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnCrearRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCrearRegistro"
+        app:layout_constraintTop_toBottomOf="@id/btnCrearDb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
